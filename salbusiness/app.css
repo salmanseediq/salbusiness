@@ -1,0 +1,167 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:#080014;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container
+{
+    max-width:1000px;
+    margin:80px auto;
+    background:#1d1231c7;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin:50px 0;   
+}
+
+.col-2
+{
+flex-basis:50%;
+min-width:300px;
+}
+
+.title
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px;
+    margin-left: 40px;
+}
+.col-2 h1
+{
+    margin-bottom:40px;
+    font-size:35px;
+    color:#fff;
+}
+
+/* color for the word insight */ 
+.color
+{
+    color:#923ee6;
+}
+
+.col-2 p
+{
+    font-size:18px;
+    margin-right:40px;
+    color:#fff;
+    opacity:40%;
+  
+}
+
+.col-2 img
+{
+    width:100%;  
+    filter: opacity(0.5) drop-shadow(0 0 0 #9526a8) drop-shadow(0 0 0 #3d0b46)  drop-shadow(0 0 0 #4f1b69)  ;
+}
+
+.container-content
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top:40px;
+   
+}
+.content-1, .content-2, .content-3
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-content h3
+{
+    color:#fff;
+    font-size:20px;
+}
+
+.container-content h6
+{
+    opacity:40%;
+    color:#fff;
+    font-size:12px;
+}
+
+
+.footer
+{
+ font-size: 15px; 
+ text-align: center; 
+ color:white;
+}
+.footer a 
+{ 
+ color: hsl(228, 45%, 44%); 
+ text-decoration: none;
+}
+
+.footer .initial
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+@media only screen and (max-width:800px)
+{
+    body
+    {
+        text-align: center;
+    }
+
+    .container
+    {
+        max-width:350px;
+        margin-top:10px;
+    }
+
+    .row
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }   
+
+
+    .container-content
+    {
+        display: flex;
+        flex-direction: column;
+       margin-right: 10px;
+       
+  }
+
+    .content-1, .content-2, .content-3
+    {
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+    margin-bottom:20px;
+  
+    }
+
+    div.col-2:nth-of-type(2)
+    {
+        order:-1;
+    }
+    .col-2 h1
+    {
+     margin-right:25px;
+     margin-top:10px;
+    }
+    
+    .footer
+    {
+        margin-bottom: 10px;
+    }
+}
